@@ -1,18 +1,26 @@
-Practical Assignment - Support Vector Regression (JS06)
+# Practical Assignment - (JS05)
 
-Name: Faiq Razzan Afifie | ID: 244107020214
-Lab Summary
+**Name:** Faiq Razzan Afifie | **ID:** 244107020214
 
-    Objective: Predict medical charges (insurance.csv) using Multiple Linear Regression vs. Support Vector Regression (SVR).
+---
 
-    Preprocessing: One-Hot Encoding for categorical features (sex, smoker, region); StandardScaler normalization for continuous features and target variable.
+## Lab Summary
 
-    Hyperparameter Tuning: 5-fold GridSearchCV on an RBF kernel (C, gamma, epsilon).
+* **Objective:** Build and evaluate classification models using Support Vector Machines (SVM) with various kernels (Linear, Polynomial, and RBF) and analyze data split ratio impacts.
+* **Preprocessing:** Applied `StandardScaler` normalization on feature distributions to optimize hyperplane margins and distance metrics.
+* **Evaluation:** Compared model accuracy performance across 70:30 and 80:20 data split ratios.
 
-Results & Comparison
-Metric	Multiple Linear Regression	Tuned SVR (RBF)
-R2 Score	0.7836	0.8691
-MAE	$4,181.19	$2,386.83
-RMSE	$5,796.28	$4,507.75
+---
 
-    Key Finding: SVR with an RBF kernel significantly outperformed Linear Regression by effectively capturing non-linear interactions (e.g., sudden medical cost surges for smokers with BMI≥30).
+## Results & Comparison
+
+| Data Split Ratio | Kernel Type | Accuracy (%) |
+| --- | --- | --- |
+| **70:30** | Linear | 97.68 |
+| **70:30** | Polynomial | 97.16 |
+| **70:30** | RBF | **98.42** |
+| **80:20** | Linear | 97.79 |
+| **80:20** | Polynomial | 97.32 |
+| **80:20** | RBF | **98.58** |
+
+* **Key Finding:** The SVM model utilizing an RBF kernel consistently achieved the highest classification accuracy across both split ratios, with the 80:20 train-test partition yielding optimal generalization results.
