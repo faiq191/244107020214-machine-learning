@@ -1,18 +1,3 @@
-```python
-# Let's check what JS07 typically covers in Polinema Machine Learning course context (Unsupervised Learning / Clustering / Association Rules / PCA).
-# Since JS06 was SVR/Regression, JS07 typically covers Unsupervised Learning (K-Means, DBSCAN, Evaluation metrics like Silhouette Score and DBI).
-# Let's organize the README structure for JS07 based on the CC_Customer_Dataset clustering assignment we just worked on.
-print("JS07 clustering repository summary structure ready.")
-
-
-```
-
-```text
-JS07 clustering repository summary structure ready.
-
-
-```
-
 # Practical Assignment - Unsupervised Learning & Clustering (JS07)
 
 **Name:** Faiq Razzan Afifie | **ID:** 244107020214
